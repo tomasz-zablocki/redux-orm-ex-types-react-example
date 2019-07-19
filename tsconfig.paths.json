@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "node_modules/@types/*"
+      ],
+      "redux-orm": [
+        "node_modules/redux-orm-typings/types/redux-orm"
+      ]
+    }
+  }
+}

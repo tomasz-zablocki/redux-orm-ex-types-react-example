@@ -1,0 +1,57 @@
+{
+  "name": "redux-orm-ex-types-react-example",
+  "version": "0.0.1",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1",
+    "redux-orm": "^0.13.3"
+  },
+  "keywords": [
+    "redux-orm",
+    "typescript",
+    "react",
+    "create-react-app",
+    "cra",
+    "example"
+  ],
+  "devDependencies": {
+    "redux-orm-typings": "tomasz-zablocki/redux-orm-typings#experimental",
+    "tslib": "^1.10.0",
+    "@types/jest": "24.0.15",
+    "@types/react": "16.8.23",
+    "@types/react-dom": "16.8.4",
+    "typescript": "next"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "Integrating experimental Redux-ORM typings with create-react-app 3.0",
+  "author": {
+    "name": "Tomasz Zabłocki",
+    "email": "tomasz.zablocki@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomasz-zablocki/redux-orm-ex-types-react-example.git"
+  }
+}
