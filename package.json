@@ -2,6 +2,7 @@
   "name": "redux-orm-ex-types-react-example",
   "version": "0.0.1",
   "dependencies": {
+    "@types/redux-orm": "github:tomasz-zablocki/redux-orm-typings#experimental",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
@@ -16,11 +17,10 @@
     "example"
   ],
   "devDependencies": {
-    "redux-orm-typings": "tomasz-zablocki/redux-orm-typings#experimental",
-    "tslib": "^1.10.0",
     "@types/jest": "24.0.15",
     "@types/react": "16.8.23",
     "@types/react-dom": "16.8.4",
+    "tslib": "^1.10.0",
     "typescript": "next"
   },
   "scripts": {
@@ -52,6 +52,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tomasz-zablocki/redux-orm-ex-types-react-example.git"
+    "url": "github:tomasz-zablocki/redux-orm-ex-types-react-example"
   }
 }

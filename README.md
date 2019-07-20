@@ -9,52 +9,21 @@ Integrating experimental `redux-orm` typings with `create-react-app@^3.0.0`
 
 ## Notes
 
-### Adding experimental `redux-orm` types dependency 
+__warning: these types are a WIP - likely to change in future__
 
-__warning: these are WIP types, rough packaging ahead__
- 
-1. adding experimental types to **package.json**:
-    ```json5
-    {
-     //...
-     "devDependencies": {
-        //... 
-        "redux-orm-typings": "tomasz-zablocki/redux-orm-typings#experimental",
-      }
-     }
-    ```
-2. create complementary **tsconfig** file, for example **tsconfig.paths.json**
-3. reference `redux-orm-typings` by setting `baseUrl` and `paths` in the complementary **tsconfig** file:
-      ```json
-      {
-        "compilerOptions": {
-          "baseUrl": ".",
-          "paths": {
-            "*": [
-              "node_modules/@types/*"
-            ],
-            "redux-orm": [
-              "node_modules/redux-orm-typings/types/redux-orm"
-            ]
-          }
-        }
-      }
-      ```
-4. reference complementary **tsconfig** file as an extension base for **tsconfig.json**
-   ```json5
-   {
-     "extends": "./tsconfig.paths.json",
-     //...
-   }
-   ```
+### Installing 
 
-This prevents `react-scripts` from modifying **tsconfig.json**, despite `npm start` log message:
+Substitute `@types/redux-orm` dependency with experimental redux-orm types branch:
+
+```json5
+{
+ //...
+ "dependencies": {
+    //... 
+    "@types/redux-orm": "github:tomasz-zablocki/redux-orm-typings#experimental"
+  }
+ }
 ```
-The following changes are being made to your tsconfig.json file:
-  - compilerOptions.paths must not be set (aliased imports are not supported)
-Starting the development server...
-```
-the extended **tsconfig** file remains unchanged. 
 
 ### Redux-ORM schema definition
 
