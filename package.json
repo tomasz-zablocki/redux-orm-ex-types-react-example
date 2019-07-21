@@ -2,7 +2,7 @@
   "name": "redux-orm-ex-types-react-example",
   "version": "0.0.2",
   "dependencies": {
-    "@types/redux-orm": "github:tomasz-zablocki/redux-orm-typings#experimental",
+    "@types/redux-orm": "github:tomasz-zablocki/redux-orm-typings#v0.13-experimental",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
