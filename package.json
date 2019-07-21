@@ -1,6 +1,6 @@
 {
   "name": "redux-orm-ex-types-react-example",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "dependencies": {
     "@types/redux-orm": "github:tomasz-zablocki/redux-orm-typings#v0.13-experimental",
     "react": "^16.8.6",
