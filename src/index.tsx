@@ -10,7 +10,7 @@ interface Book {
 }
 
 class Book extends Model<typeof Book> {
-    static modelName = 'Book';
+    static modelName = 'Book' as const;
 
     static fields = {
         id: attr(),
@@ -19,8 +19,7 @@ class Book extends Model<typeof Book> {
     };
 }
 
-const schema = {Book};
-const orm = new ORM<typeof schema>();
+const orm = new ORM<[typeof Book]>();
 orm.register(Book);
 
 const session = orm.session(orm.getEmptyState());
